@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -35,6 +36,13 @@ public class SeleccionarEspecialidad extends AppCompatActivity {
                 Intent intent = new Intent(SeleccionarEspecialidad.this, SeleccionarMedico.class);
                 intent.putExtra("especialidad", especialidadSeleccionada);
                 startActivity(intent);
+            }
+        });
+        ImageButton backButton = findViewById(R.id.atras);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
     }

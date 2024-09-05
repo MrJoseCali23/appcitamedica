@@ -1,8 +1,6 @@
 package com.example.appcitamedica;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -34,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 // Validar credenciales usando el método estático en Usuario
                 if (Usuario.autenticar(MainActivity.this, usuarioIngresado, passwordIngresado)) {
                     Toast.makeText(MainActivity.this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show();
+
                     Intent intent = new Intent(MainActivity.this, perfil.class);
                     startActivity(intent);
                 } else {

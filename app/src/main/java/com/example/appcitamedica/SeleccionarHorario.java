@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -57,6 +58,13 @@ public class SeleccionarHorario extends AppCompatActivity {
                 intent.putExtra("horario", horarioSeleccionado);
 
                 startActivity(intent);
+            }
+        });
+        ImageButton backButton = findViewById(R.id.atras);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
     }

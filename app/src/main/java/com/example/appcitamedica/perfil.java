@@ -1,6 +1,8 @@
 package com.example.appcitamedica;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -28,7 +30,8 @@ public class perfil extends AppCompatActivity {
         btnReservar = findViewById(R.id.btnReservar);
 
         // Cargar el nombre del usuario desde las preferencias o el intent
-        String nombre = getIntent().getStringExtra("nombre");
+        SharedPreferences sharedPref = getSharedPreferences("LoginPrefs", Context.MODE_PRIVATE);
+        String nombre = sharedPref.getString("nombre", null);
         txthola.setText("Bienvenido, " + nombre);
 
         // Inicializar datos de ejemplo

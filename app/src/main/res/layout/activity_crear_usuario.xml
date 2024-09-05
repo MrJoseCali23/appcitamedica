@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".CrearUsuario">
+
+
+        <EditText
+            android:id="@+id/editNombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="244dp"
+            android:fontFamily="@font/andika_new_basic"
+            android:hint="Nombre"
+            android:textColorHint="#009688"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editApellido"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/andika_new_basic"
+            android:hint="Apellido"
+            android:textColorHint="#009688"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editNombre" />
+
+
+        <EditText
+            android:id="@+id/editUsuario"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/andika_new_basic"
+            android:hint="Usuario"
+            android:textColorHint="#009688"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editApellido" />
+
+
+        <EditText
+            android:id="@+id/editContrasena"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/andika_new_basic"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:textColorHint="#009688"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editUsuario" />
+
+        <EditText
+            android:id="@+id/editDireccion"
+            android:layout_width="458dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/andika_new_basic"
+            android:hint="Dirección"
+            android:textColorHint="#009688"
+            app:layout_constraintTop_toBottomOf="@+id/editContrasena"
+            tools:layout_editor_absoluteX="-1dp" />
+
+        <Button
+            android:id="@+id/btnCrearUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#FF9800"
+            android:fontFamily="@font/andika_new_basic"
+            android:text="Crear Usuario"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editDireccion"
+            app:layout_constraintVertical_bias="0.182" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:fontFamily="@font/bad_script"
+            android:text=" CREA TU USUARIO"
+            android:textColor="#009688"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/editNombre"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.79" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="116dp"
+            android:layout_height="86dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.076"
+            app:srcCompat="@mipmap/logodos" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
